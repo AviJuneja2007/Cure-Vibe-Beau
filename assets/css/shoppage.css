@@ -272,7 +272,7 @@ body{
       justify-content: center;
       align-items: center;
       max-width: 1200px;
-      margin-left: 20px;
+      margin-left: 80px;
       flex-wrap: wrap;
       padding: 40px 0;
   }
@@ -281,7 +281,7 @@ body{
       position: relative;
       width: 320px;
       height: 460px;
-      box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+      box-shadow: inset 5px 5px 5px rgba(0,0,0,0,0.05),
                   inset -5px -5px 5px rgba(255,255,255,0.5),
                   5px 5px 5px rgba(0,0,0,0.5),
                   -5px -5px 5px rgba(255, 255, 255, 0.5);
@@ -305,14 +305,15 @@ body{
   }
   
   .container .card:hover .box{
-      transform: translateY(-50px);
+      /* transform: translateY(-50px); */
       box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-      background: linear-gradient(45deg, #b95ce4, #4f29cd);
+      background: linear-gradient(45deg, #4d9287, #6fcab3);
   }
   
   .container .card .box .content{
-      padding: 20px;
+      padding: 10px;
       text-align: center;
+      overflow: hidden;
   }
   
   .container .card .box .content h2{
@@ -380,18 +381,30 @@ body{
 
   /* Adding extra changes apart from cards here---- */
 
+  .medi{
+    padding-top: 60px;
+  }
 
   .med-heading{
     /* margin-left: auto; */
     /* margin-right: auto; */
-    text-align: center;
+    text-align: left;
+    margin-left: 180px;
+    border-left: 0.5px solid rgb(22, 104, 66);
+    border-left-width: 4px;
     margin-top: 80px;
+    padding-left: 10px;
+    /* padding-top: 60px; */
     font-family: 'Poppins' , sans-serif;
   }
 
   .equip-heading{
-    text-align: center;
+    text-align: left;
+    margin-left: 180px;
+    border-left: 0.5px solid rgb(22, 104, 66);
+    border-left-width: 4px;
     margin-top: 50px;
+    padding-left: 10px;
     font-family: 'Poppins' , sans-serif;
   }
 
