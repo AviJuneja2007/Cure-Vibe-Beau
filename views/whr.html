@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favi.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/calculatorspage.css">
+    
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <h1>Health Calculator </h1>
+</head>
+<body>
+  <!--------------------------------------------------BASE HOMEPAGE HTML ENDS--------------------------------------------------------------> 
+  <div id="logo" class="header">
+    <img src="/images/bgnew.jpg" alt="">
+</div>
+<div class="sidebar">
+  <div class="logo-details">
+      <i class='bx bx-menu' id="btn" ></i>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <a href="#">
+        <i class='bx bx-plus-medical bx-flip-horizontal' ></i>
+        <span class="links_name"> Medicines & Equipments</span>
+      </a>
+       <span class="tooltip">Medicines and Equipments</span>
+    </li>
+    <li>
+     <a href="#">
+      <i class='bx bx-test-tube bx-flip-horizontal' ></i>
+       <span class="links_name">Lab tests</span>
+     </a>
+     <span class="tooltip">Lab tests</span>
+   </li>
+   <li>
+     <a href="#">
+       <i class='bx bx-pie-chart-alt-2' ></i>
+       <span class="links_name">Calculators</span>
+     </a>
+     <span class="tooltip">Calculators</span>
+   </li>
+   <li>
+     <a href="#">
+       <i class='bx bx-cart-alt' ></i>
+       <span class="links_name">Checkout Cart</span>
+     </a>
+     <span class="tooltip">Checkout Cart</span>
+   </li>
+   <li>
+     <a href="#">
+      <i class='bx bx-user'></i>
+       <span class="links_name">Profile</span>
+     </a>
+     <span class="tooltip">Profile</span>
+   </li>
+   <li class="profile">
+    <div class="profile-details">
+      <div class="name_job">
+        <div class="name">CURE VIBE BEAU Ⓒ 2021</div>
+        <div class="job">Pharmacy and Pathology Labs</div>
+      </div>
+    </div>
+    <i class='bx bx-log-out' id="log_out" ></i>
+</li>
+</ul>
+</div>
+
+<script>
+let sidebar = document.querySelector(".sidebar");
+let closeBtn = document.querySelector("#btn");
+let searchBtn = document.querySelector(".bx-search");
+
+closeBtn.addEventListener("click", ()=>{
+  sidebar.classList.toggle("open");
+  menuBtnChange();//calling the function(optional)
+});
+// following are the code to change sidebar button(optional)
+function menuBtnChange() {
+ if(sidebar.classList.contains("open")){
+   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+
+ }else {
+   closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+ }
+}
+</script>
+<!--------------------------------------------------BASE HOMEPAGE HTML ENDS-------------------------------------------------------------->
+  <div id ="main">
+    <h3><b>W</b>aist To <b>H</b>ip <b>R</b>atio Calculator</h3>
+    <form class="form" id="form" onsubmit="return validateForm()">
+    <div class="row-one">
+      <input type="text" class="text-input" id="age" autocomplete="off" required/><p class="text">Age</p>
+      <label class="container">
+      <input type="radio" name="radio" id="f"><p class="text">Female</p>
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">
+      <input type="radio" name="radio" id="m"><p class="text">Male</p>
+        <span class="checkmark"></span>
+      </label>
+      </div>
+    
+    <div class="row-two">
+      <input type="text" class="text-input" id="waist" autocomplete="off" required><p class="text">Waist (cm)</p>
+      <input type="text" class="text-input" id="hip" autocomplete="off" required><p class="text">Hip (cm)</p>
+    </div>
+    <button type="button" id="submit">Submit</button>
+    </form>
+  </div>
+    <script src="/js/whr.js"></script>
+</body>
+</html>
