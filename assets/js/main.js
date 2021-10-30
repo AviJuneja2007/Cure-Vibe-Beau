@@ -83,13 +83,57 @@ inCart:0
                            {
                               id=12,
                               Name:'Azibact 500 Tablet',
-                              Description:'Azibact 500 Tablet is an antibiotic used to treat various types of bacterial infections of the respiratory tract, ear, nose, throat, lungs, skin, and eye in adults and children. It is also effective in typhoid fever and some sexually transmitted diseases like gonorrhea.
-                              ',
+                              Description:'Azibact 500 Tablet is an antibiotic used to treat various types of bacterial infections of the respiratory tract, ear, nose, throat, lungs, skin, and eye in adults and children. It is also effective in typhoid fever and some sexually transmitted diseases like gonorrhea.',
                               Price: 67,
                               inCart:0
                              },
+                             {
+                                id=13,
+                                Name:'Digital Blood Pressure Monitor',
+                                Description:'Digital Blood Pressure Monitor',
+                                Price:2099,
+                                inCart:0
+                             },
+                             {
+                              id=14,
+                              Name:'Digital Blood Pressure Monitor',
+                              Description:'Digital Blood Pressure Monitor',
+                              Price:2099,
+                              inCart:0
+                           },
+                           {
+                              id=15,
+                              Name:'Pulse Oximeter Fingertip',
+                              Description:'Pulse Oximeter Fingertip',
+                              Price:528,
+                              inCart:0
+                           },
+                           {
+                              id=16,
+                              Name:'',
+                              Description:'',
+                              Price: ,
+                              inCart:0
+                           },
+                           {
+                              id=17,
+                              Name:'Blood Glucode Test Strips',
+                              Description:'Blood Glucode Test Strips',
+                              Price:634,
+                              inCart:0
+                           },
+                           {
+                              id=18,
+                              Name:'Expertomind Sitz Bath Tub for Men & Women',
+                              Description:'Expertomind Sitz Bath Tub for Men & Women',
+                              Price:499,
+                              inCart:0
+                           },
+
+
 
 ]
+
 
 
 var data = [{
