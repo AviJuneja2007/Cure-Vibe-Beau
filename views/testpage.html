@@ -75,12 +75,32 @@
             <div class="job">Pharmacy and Pathology Labs</div>
           </div>
         </div>
-        <i class='bx bx-log-out' id="log_out"></i>
+        <i  class='bx bx-log-out' id="log_out" onclick="handlelogout()"></i>
       </li>
     </ul>
   </div>
 
-  <script>
+  <script src=
+  "https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
+      </script>
+   <script>   
+     
+     const config = {
+apiKey: "AIzaSyDW5-Szhn5ruui9xPVGqDGQ5ObQ2VYma8k",
+authDomain: "cure-vibe-beau.firebaseapp.com",
+databaseURL: "https://cure-vibe-beau-default-rtdb.firebaseio.com",
+projectId: "cure-vibe-beau",
+storageBucket: "cure-vibe-beau.appspot.com",
+messagingSenderId: "262834749571",
+appId: "1:262834749571:web:09da42fa5c78eee9b0dbb6",
+measurementId: "G-SXR0ZGKPD7"
+};
+firebase.initializeApp(config);
+const auth = firebase.auth();
+function handlelogout(){
+firebase.auth().signOut();
+window.location=('/')
+}
     let sidebar = document.querySelector(".sidebar");
     let closeBtn = document.querySelector("#btn");
     let searchBtn = document.querySelector(".bx-search");
