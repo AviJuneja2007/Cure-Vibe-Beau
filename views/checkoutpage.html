@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/checkout.css">
     <title>Checkout Cart</title>
 </head>
-<body>
+<body onload="downloadinvoice()">
     <!--------------------------------------------------BASE HOMEPAGE HTML ENDS--------------------------------------------------------------> 
     <div id="logo" class="header">
         <img src="/images/bgnew.jpg" alt="">
@@ -116,7 +116,7 @@
     <!-- "grandtotal" class-->
 </div>
     </div>
-    <button onclick="downloadinvoice()">Download invoice</button>
+    <a href="/downloadinvoice">Download invoice</a>
     
 </section>
     <script src='/js/main.js'></script>
