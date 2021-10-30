@@ -84,42 +84,35 @@ inCart:0,
                               inCart:0
                              },
                              {
-                                id:13,
-                                Name:'Digital Blood Pressure Monitor',
-                                Description:'Digital Blood Pressure Monitor',
-                                Price:2099,
-                                inCart:0
-                             },
-                             {
-                              id:14,
+                              id:13,
                               Name:'Digital Blood Pressure Monitor',
                               Description:'Digital Blood Pressure Monitor',
                               Price:2099,
                               inCart:0
                            },
                            {
-                              id:15,
+                              id:14,
                               Name:'Pulse Oximeter Fingertip',
                               Description:'Pulse Oximeter Fingertip',
                               Price:528,
                               inCart:0
                            },
                            {
-                              id:16,
+                              id:15,
                               Name:'Blood Glucode Test Strips',
                               Description:'Blood Glucode Test Strips',
                               Price:634,
                               inCart:0
                            },
                            {
-                              id:17,
-                              Name:'Dettol Antiseptic Liquid for First Aid',
-                              Description:'Dettol Antiseptic Liquid for First Aid',
-                              Price:353,
+                              id:16,
+                              Name:'Medical Thermometer',
+                              Description:'Medical Thermometer',
+                              Price: 353,
                               inCart:0
-                           },
+                          },
                            {
-                              id:18,
+                              id:17,
                               Name:'Expertomind Sitz Bath Tub for Men & Women',
                               Description:'Expertomind Sitz Bath Tub for Men & Women',
                               Price:499,
