@@ -353,7 +353,7 @@ function onloadcartnumber () {
    if(cartitems&&checkoutcontainer){
       checkoutcontainer.innerHTML='';
       Object.values(cartitems).map(item=>{
-       checkoutcontainer.innerHTML+=`<div class="product row">
+       checkoutcontainer.innerHTML+=`<div class="product row outer_box">
        <div class="item ml-3 col-sm">
        <span>${item.Name}</span>
        </div>
@@ -361,7 +361,7 @@ function onloadcartnumber () {
        <span>${item.Price}</span>
        </div>
        <div class="quantity col-sm"><span>${item.inCart}<span></div>
-       <div class="total col-sm"><span>${item.inCart*item.Price}</span></div>
+       <div class="total col-sm"><span">${item.inCart*item.Price}</span></div>
        </div>`
       })
       let grandtotal=document.querySelector(".grandtotal");
@@ -369,8 +369,8 @@ function onloadcartnumber () {
       grandtotal.innerHTML+=`
       <div class="grandtotal mt-4">
 
-      <span>Total payable amount</span>
-      <span>${totalcost}</span>
+      <span class="tot-pay">Total payable amount</span>
+      <span class="total-price">${totalcost}</span>
       </div>
       
       `

@@ -97,14 +97,32 @@
     }
     </script>
     <section class="home-section">
-    <div class="checkoutcontainer">
-<div class="container mt-4 row">
+    <!-- <div class="checkoutcontainer"> -->
+<!-- <div class="container mt-4 row">
     <h5 class="product-title col-lg">Product</h5>
     <h5 class="product-title  col-lg">Price</h5>
     <h5 class="product-title  col-lg">Quantity</h5>
     <h5 class="product-title  col-lg">Total</h5>
  
+</div> -->
+
+<div class="outer_box">
+  <div class="row">
+      <div class="column product-title">
+        <h3 class="product-title col-lg">Product</h3>
+      </div>
+      <div class="column product-title">
+        <h3 class="product-title  col-lg">Price</h3>
+      </div>
+      <div class="column product-title">
+        <h3 class="product-title  col-lg">Quantity</h3>
+      </div>
+      <div class="column product-title">
+        <h3 class="product-title  col-lg">Total</h3>
+      </div>
+  </div>
 </div>
+
 <!----- for refrence you can check 'main.js' displaycart() function  line 205 -->
 <div class="product">
    <!--  "item" class--> 
@@ -112,11 +130,15 @@
    <!--  "price" class--> 
    <!--  "total" class-->  
     </div>
-<div class="grandtotal">
-    <!-- "grandtotal" class-->
-</div>
+
+    <div class="outer-grand">
+        <div class="grandtotal">
+          <!-- "grandtotal" class-->
+      </div>
     </div>
-    <button onclick="downloadinvoice()">Download invoice</button>
+
+    </div>
+    <button class="btn btn-primary invoice"onclick="downloadinvoice()">Download invoice</button>
     
 </section>
     <script src='/js/main.js'></script>
