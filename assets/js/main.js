@@ -170,8 +170,10 @@ function onloadcartnumber () {
    setitems(product);
  }
  function setitems(product){
+    console.log(product);
     let cartitems=localStorage.getItem('productsincart');
     cartitems=JSON.parse(cartitems);
+    console.log(cartitems);
     if(cartitems!=null)
     {
        if(cartitems[product.Test]==undefined){
@@ -193,6 +195,7 @@ function onloadcartnumber () {
  function totalcost(product){
 
     let cartcost=localStorage.getItem('totalcost');
+  
     if(cartcost!=null)
     {
        cartcost=parseInt(cartcost);

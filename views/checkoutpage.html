@@ -44,9 +44,13 @@
        <li>
          <a href="#">
            <i class='bx bx-cart-alt' ></i>
-           <span class="links_name">Checkout Cart</span>
+           <span class="links_name ">Checkout Cart</span>
+           <span class="links_name cart1 "></span>
          </a>
-         <span class="tooltip">Checkout Cart</span>
+         <span class="tooltip ">Checkout Cart</span>
+           
+      
+    
        </li>
        <li>
          <a href="#">
@@ -112,7 +116,8 @@
     <!-- "grandtotal" class-->
 </div>
     </div>
-    <a href="/downloadinvoice"ng-click="downloadinvoice()">Download invoice</a>
+    <button onclick="downloadinvoice()">Download invoice</button>
+    
 </section>
     <script src='/js/main.js'></script>
 
@@ -140,7 +145,6 @@
 };
 firebase.initializeApp(config);
  const auth = firebase.auth();
- const firestore = firebase.firestore();
 
  function downloadinvoice(){
    let cartitems=localStorage.getItem("productsincart");
