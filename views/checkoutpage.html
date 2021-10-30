@@ -154,12 +154,13 @@ function handlelogout(){
    cartitems=JSON.parse(cartitems);
    console.log(cartitems);
    const data=[];
-   
+
    Object.values(cartitems).map(item=>{
 data.push({Name:item.Name,Price:item.Price,Incart:item.inCart,Total:item.inCart*item.Price})
    })
    const tempgref=firebase.database().ref('temp');
 tempgref.set(data);
+localStorage.clear();
 //console.log(data.length);
 
 

@@ -381,6 +381,3 @@ displaycart();
 onloadcartnumber();
 
 
-function deletelocalstorage(){
-   localStorage.clear();
-}
