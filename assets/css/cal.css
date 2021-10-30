@@ -149,6 +149,7 @@ background: #FFF;
 color: #fff;
 font-size: 15px;
 font-weight: 400;
+padding:2px;
 white-space: nowrap;
 opacity: 0;
 pointer-events: none;
