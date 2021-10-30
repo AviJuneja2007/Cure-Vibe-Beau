@@ -54,6 +54,10 @@ app.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/views/checkoutpage.html'));
     //__dirname : It will resolve to your project folder.
   });
+  app.get('/profile',function(req,res){
+    res.sendFile(path.join(__dirname+'/views/profilepage.html'));
+    //__dirname : It will resolve to your project folder.
+  });
   app.get('/downloadinvoice',async(req,res) => {
  
     createInvoice(tempgenralinfo,tempdata,res)
