@@ -2,6 +2,7 @@
 /*-------------------------- BASE HOMEPAGE CSS BEGINS-------------- */
 body{
     font-family: 'Julius Sans One', sans-serif; 
+    background-color: #efe9f7;
     /* display: block; */
   }
   #logo img{
@@ -225,6 +226,7 @@ body{
   
   /*-------------------------- BASE HOMEPAGE CSS ENDS-------------- */
   .home-section {
+    font-family: "sans-serif" , sans-serif;
     position: relative;
     min-height: 100vh;
     top: 5em !important;
@@ -247,4 +249,92 @@ ol,ul {
     font-size: 25px;
     font-weight: 500;
     margin: 18px
+  }
+
+  /* -------------- Cart Design ---------------------- */
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 100px; /* Should be removed. Only for demonstration */
+  }
+
+  .outer_box{
+    margin-left: 60px;
+    margin-top: 90px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .grandtotal{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+
+  .tot-pay{
+    /* border-left: 0.5px solid rgb(22, 104, 66); */
+    /* border-bottom: 1px solid rgb(22, 104, 66);
+    border-bottom-width: 3px; */
+    border-left-width: 4px;
+    /* padding-left: 1px; */
+    padding-bottom: 6px;
+  }
+
+  .outer-grand{
+    border-left: 0.5px solid rgb(22, 104, 66);
+    border-left-width: 4px;
+    border-bottom: 1px solid rgb(22, 104, 66);
+    border-bottom-width: 3px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+
+  .total-price{
+    /* padding-left: 20px; */
+    padding-left: 50px;
+  }
+
+  .invoice{
+    margin-left: 50px;
+  }
+
+  .product{
+    margin-top: -1px;
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+
+  .price{
+    margin-left: 40px;
+  }
+  .quantity{
+    margin-left: 40px;
+  }
+
+  body{
+    font-family: "Poppins" , sans-serif;
+  }
+
+  h3{
+    font-weight: bold;
   }
