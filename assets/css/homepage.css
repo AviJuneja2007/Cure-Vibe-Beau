@@ -4,9 +4,13 @@ body{
     /* display: block; */
 }
 #logo img{
-    height: 6em;
-    width: 91.4em;
-    position: fixed;
+  height: 6em;
+  width:auto;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  margin-top: 0 auto;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -251,7 +255,7 @@ home-section {
   left: 78px;
   width: calc(100% - 78px);
   transition: all 0.5s ease;
-  z-index: 2;
+  z-index: 0;
 }
 .sidebar.open ~ .home-section{
   left: 250px;
