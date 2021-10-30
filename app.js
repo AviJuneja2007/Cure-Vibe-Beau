@@ -212,7 +212,7 @@ var sum=0;
     generateTableRow(
       doc,
       position,
-      item.Test,
+      item.Name,
       item.Price+" Rs",
       item.Incart,
       item.Total+" Rs"

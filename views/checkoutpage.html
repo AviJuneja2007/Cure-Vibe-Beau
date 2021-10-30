@@ -153,7 +153,7 @@ firebase.initializeApp(config);
    const data=[];
    
    Object.values(cartitems).map(item=>{
-data.push({Test:item.Test,Price:item.Price,Incart:item.inCart,Total:item.inCart*item.Price})
+data.push({Name:item.Name,Price:item.Price,Incart:item.inCart,Total:item.inCart*item.Price})
    })
    const tempgref=firebase.database().ref('temp');
 tempgref.set(data);
