@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/images/favi.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="blueBg">
+
+      <div class="box signin">
+        <h2>Already Have an Account ?</h2>
+        <button class="signinBtn">Sign in</button>
+      </div>
+
+      <div class="box signup">
+        <h2>Don't Have an Account ?</h2>
+        <button class="signupBtn">Sign Up</button>
+      </div>
+    </div>
+
+    <div class="formBx">
+      <div class="form signinForm">
+        <form >
+          <h2>CURE VIBE BEAU</h2>
+          <h3>Sign In</h3>
+          <input id="email1" type="text" placeholder="Email">
+          <input id="password1" type="password" placeholder="Password">
+          <button onclick="login()" type="button"class="btn">Login</button>
+         <!-- <input type="submit" value="Login"> -->
+         <button onclick="googlelogin()" type="button"class="btn">Signin with google</button>
+          <p><a href="#" class="forgot">Forgot Password</a></p>
+        </form>
+      </div>
+
+      <div class="form signupForm">
+        <form >
+          <h2>CURE VIBE BEAU</h2>
+          <h3>Sign Up</h3>
+          <input type="text" id="name" type="text" placeholder="Name">
+          <input type="text" id="email" type="email" placeholder="Email Address">
+          <input id="password"type="password" type="password" placeholder="Password">
+          <input id="confirmpassword"type="password" type="password"placeholder="Confirm Password">
+          <button onclick="register()" class="btn-signup" type="button">Register</button>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <script>
+      const signinBtn = document.querySelector('.signinBtn');
+      const signupBtn = document.querySelector('.signupBtn');
+      const formBx = document.querySelector('.formBx');
+      const body = document.querySelector('body')
+      
+      signupBtn.onclick = function(){
+        formBx.classList.add('active');
+        body.classList.add('active');
+      }
+
+      signinBtn.onclick = function(){
+        formBx.classList.remove('active');
+        body.classList.remove('active');
+      }
+    </script>    
+</body>
+</html>
+
+
+
+
+
