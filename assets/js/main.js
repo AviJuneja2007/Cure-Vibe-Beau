@@ -362,7 +362,7 @@ function onloadcartnumber () {
       grandtotal.innerHTML+=`
       <div class="grandtotal mt-4">
 
-      <span class="tot-pay">Total payable amount</span>
+      <span class="tot-pay">Total Payable Amount</span>
       <span class="total-price">${totalcost}</span>
       </div>
       
