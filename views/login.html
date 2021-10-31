@@ -167,7 +167,12 @@ if(password===confirmpassword){
 firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((userCredential) => {
     // Signed in 
+    //console.log(name);
+   // console.log(email);
+    localStorage.setItem('user-name',name);
+   localStorage.setItem('user-email',email);
     var user = userCredential.user;
+  
  window.location=('/home');
 
     // ...
