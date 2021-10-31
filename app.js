@@ -72,7 +72,7 @@ app.get('/',function(req,res){
 const tempdata=[];
 
 const tempgenralinfo=[{
-  Name:'Aryan basu',
+  Name:'Rohit Sharma',
   Payement:'Cash',
 }]
   app.listen(port,()=>{
