@@ -170,19 +170,32 @@ firebase.initializeApp(config);
  const auth = firebase.auth();
 function handlelogout(){
   firebase.auth().signOut();
+  localStorage.clear();
   window.location=('/')
 }
  function downloadinvoice(){
+   let counts=localStorage.getItem("count");
+   if(counts===null)
+   localStorage.setItem("count",1);
+   else{
+    counts=parseInt(counts);
+    if(counts>=10)
+    localStorage.clear();
+    else
+   localStorage.setItem("count",counts+1);
+   }
    let cartitems=localStorage.getItem("productsincart");
    cartitems=JSON.parse(cartitems);
-   console.log(cartitems);
+  //console.log(cartitems);
    const data=[];
 
    Object.values(cartitems).map(item=>{
 data.push({Name:item.Name,Price:item.Price,Incart:item.inCart,Total:item.inCart*item.Price})
+//console.log(data);
    })
    const tempgref=firebase.database().ref('temp');
 tempgref.set(data);
+
 //localStorage.clear();
 //console.log(data.length);
 

@@ -87,6 +87,7 @@ firebase.initializeApp(config);
 const auth = firebase.auth();
 function handlelogout(){
 firebase.auth().signOut();
+localStorage.clear();
 window.location=('/')
 }
 let sidebar = document.querySelector(".sidebar");

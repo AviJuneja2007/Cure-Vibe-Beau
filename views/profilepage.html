@@ -92,6 +92,7 @@
 
     function handlelogout() {
       firebase.auth().signOut();
+      localStorage.clear();
       window.location = ('/')
     }
    
