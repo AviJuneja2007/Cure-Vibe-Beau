@@ -11,10 +11,10 @@ This repository is made for HackCBS 4.0 | 2021
 - Easy to use **responsive UI** that caters to devices with varied resolutions.
 - From the Shop Section one can **purchase medicines** as per their doctor's perscription.
 - One can also **buy healthcare related equipments**.
-- One can **book Pathalogical Lab Test** on the website and the nearby outlet's phlebotomist will contact the user for their sample specimen collection.
+- One can **book Pathological Lab Test** on the website and the nearby outlet's phlebotomist will contact the user for their sample specimen collection.
 - One can evaluate their level of fitness using **BMI Index Calculator** and **Waist to Hip Ratio Calculator**.
 - All the purchased items from the Pharmacy Shop Section and the booked Lab Tests summary can be viewed in the **Checkout Cart Section** and also its invoice can be generated.
-- One can view their profile and their past detailed lab reports (PDF) easily from the Profile Section.
+- One can view their profile and their detailed past lab reports (PDF) easily from the Profile Section.
 
 
 
