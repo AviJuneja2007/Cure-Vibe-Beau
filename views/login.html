@@ -153,9 +153,10 @@ firebase.auth().signInWithEmailAndPassword(email, password)
       tempdata.push(snapshot.val());
       localStorage.setItem('user-name',tempdata[0].name);
    localStorage.setItem('user-email',tempdata[0].email);
+   window.location=('/home')
 //console.log(tempdata[0].email)
     })
- window.location=('/home')
+ //
     // ...
   })
   .catch((error) => {
