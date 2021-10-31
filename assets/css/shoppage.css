@@ -234,8 +234,8 @@ body{
   z-index: 0;
   }
   .sidebar.open ~ .home-section{  
-  left: 150px;
-  width: calc(100% - 150px);
+  left: 130px;
+  width: calc(100% - 130px);
   }
   .home-section .text{
   display: inline-block;
@@ -269,15 +269,17 @@ body{
       min-height: 100vh;
       background: #ebf5fc;
   }
-  
+  h1{
+    font-family: 'Poppins' , sans-serif !important;
+  }
   .container{
       display: flex;
       justify-content: center;
       align-items: center;
       max-width: 1200px;
-      margin-left: 80px;
+      margin-left: 50px;
       flex-wrap: wrap;
-      padding: 40px 0;
+      padding: 30px 0;
   }
   
   .container .card{
