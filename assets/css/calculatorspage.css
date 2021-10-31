@@ -154,6 +154,9 @@ opacity: 0;
 pointer-events: none;
 transition: 0.4s;
 }
+.sidebar i:hover{
+  cursor: pointer;
+}
 .sidebar.open li a .links_name{
 opacity: 1;
 pointer-events: auto;

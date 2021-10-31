@@ -80,6 +80,10 @@ body{
   font-size: 28px;
   text-align: center;
   line-height: 60px;
+  
+  }
+  .sidebar i:hover{
+    cursor: pointer;
   }
   .sidebar .nav-list{
   margin-top: 20px;
@@ -338,3 +342,5 @@ ol,ul {
   h3{
     font-weight: bold;
   }
+
+ 
