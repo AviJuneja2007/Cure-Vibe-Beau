@@ -256,7 +256,9 @@ margin: 18px
   color: rgb(134, 119, 119);
 }
 h4{
-  background-color: rgb(184, 192, 192);
+  background-color: rgb(193, 233, 233);
+  border: 5px;
+  padding: 2px;
 }
 .carousel-item {
   padding: 9% 2%;
@@ -265,7 +267,7 @@ h4{
 .carousel-caption{
   margin-bottom: 5.5%;
   font-family: 'Poppins' , sans-serif;
-  color:rgb(133, 80, 168);
+  color:rgb(151, 34, 230);
 }
 
 .testimonial-image {
