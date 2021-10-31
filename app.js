@@ -70,6 +70,7 @@ app.get('/',function(req,res){
 
 
 const tempdata=[];
+const userdata=[];
 
 const tempgenralinfo=[{
   Name:'Rohit Sharma',
@@ -80,6 +81,13 @@ const tempgenralinfo=[{
     firebase.database().ref('temp').on('value', (snapshot) => {
       tempdata.push(snapshot.val());
     
+    })
+    firebase.database().ref('tempuser').on('value', (snapshot) => {
+      userdata.push(snapshot.val());
+     var k=userdata.length;
+     k=k-1;
+    tempgenralinfo[0].Name=userdata[k].name;
+   // console.log(tempgenralinfo)
     })
     //console.log(tempdata);
     console.log(`listening to the port number at ${port}`);

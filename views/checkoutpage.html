@@ -203,6 +203,21 @@
       let cartitems = localStorage.getItem("productsincart");
       cartitems = JSON.parse(cartitems);
       //console.log(cartitems);
+           
+      var name=localStorage.getItem('user-name');
+       var email=localStorage.getItem('user-email');
+      if(name==null||email==null)
+      {
+        name="Rohit sharma";
+        email="rohitsharma@gmail.com"
+
+      }
+      const info={
+        name:name,
+        email:email
+      }
+      const inforef=firebase.database().ref('tempuser');
+      inforef.set(info);
       const data = [];
 
       Object.values(cartitems).map(item => {

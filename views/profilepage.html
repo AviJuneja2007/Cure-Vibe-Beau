@@ -114,18 +114,20 @@
       menuBtnChange(); //calling the function(optional)
     });
     function abc(){
-      const name=localStorage.getItem('user-name');
-      const email=localStorage.getItem('user-email');
-      console.log(typeof name);
+     
+       var name=localStorage.getItem('user-name');
+       var email=localStorage.getItem('user-email');
       if(name!=null)
       {
-        console.log('abc')
+        //console.log('abc')
         document.getElementById("name").innerHTML = name
       }
       if(email!=null)
       {
         document.getElementById("email").innerHTML=email
       }
+      
+      
      
      //
     }
