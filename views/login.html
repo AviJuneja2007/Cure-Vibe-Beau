@@ -126,11 +126,27 @@ var name=document.getElementById('name').value;
 var email=document.getElementById('email').value;
 var password=document.getElementById('password').value;
 var confirmpassword=document.getElementById('confirmpassword').value;
-var result =firebase.auth().createUserWithEmailAndPassword(email,password);
+if(password===confirmpassword){
 
-result.catch(function(error){
-console.log(error);
-});
+firebase.auth().createUserWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    // Signed in 
+    var user = userCredential.user;
+ window.location=('/home');
+
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    window.alert('Email already in use or Password is weak')
+
+    // ..
+  });
+}
+else{
+  window.alert('Password and Confirm password are not same')
+}
 
 }
 </script>
