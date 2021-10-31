@@ -8,3 +8,5 @@
 ![Open Issues](https://img.shields.io/github/issues/AviJuneja2007/Cure-Vibe-Beau?color=important)
 ![Open Pull Requests](https://img.shields.io/github/issues-pr/AviJuneja2007/Cure-Vibe-Beau?color=yellowgreen)
 ![License](https://img.shields.io/github/license/AviJuneja2007/Cure-Vibe-Beau)
+
+## Mockup
