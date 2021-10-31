@@ -102,23 +102,59 @@ const firestore = firebase.firestore();
 
 function googlelogin(){
 var provider=new firebase.auth.GoogleAuthProvider();
+firebase.auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    /** @type {firebase.auth.OAuthCredential} */
+    var credential = result.credential;
+
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    const userdata=[];
+
+   localStorage.setItem('user-name',user.displayName);
+   localStorage.setItem('user-email',user.email);
+   localStorage.setItem('user-photo',user.photoURL);
+   
+  //  console.log(userdata);
+  window.location=('/home');
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+/*
 firebase.auth().signInWithPopup(provider).then(function(response){
 window.location = '/home'
 }).catch(function(error){
 console.log(error);
-})
+}) */
 }
 function login(){
 var email=document.getElementById('email1').value;
 var password=document.getElementById('password1').value;
-var result =firebase.auth().signInWithEmailAndPassword(email,password);
-var user = firebase.auth().currentUser;
-console.log("username",user);
-result.catch(function(error){
-const errormessage=error.message;
+firebase.auth().signInWithEmailAndPassword(email, password)
+  .then((userCredential) => {
+    // Signed in
+    var user = userCredential.user;
+   // console.log(user.email);
+   window.location=('/home')
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    window.alert(errorMessage);
+  });
 
-window.alert(errormessage)
-});
 
 }
 function register(){
